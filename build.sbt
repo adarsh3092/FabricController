@@ -7,3 +7,9 @@ lazy val root = (project in file("."))
     name := "FabricController",
     idePackagePrefix := Some("org.scala.datapipeline")
   )
+
+lazy val scope = "provide"
+libraryDependencies += "org.apache.spark" %% "spark-core" % "3.4.0"
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.4.0"
+libraryDependencies += "io.delta" %% "delta-core" % "2.4.0"
+

@@ -1,0 +1,18 @@
+{
+  "application": "local_ruuner",
+  "classname": "org.scala.datapipeline.Transform",
+  "source": [
+    {
+      "source_type": "file",
+      "format": "csv",
+      "path": "resource/songs_details.csv",
+      "options": {"header": "true"}
+    }
+  ],
+  "sink": [
+    {
+      "format": "delta",
+      "path": "delta/sink/"
+    }
+  ]
+}
